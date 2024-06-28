@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mukhyamantri Vraksharopan Maha Abhiyan</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+</head>
+
+<body>
+  <div class="header">
+    <img src="assests/goldenemb.png" alt="Government Logo" />
+    <img src="assests/logo-text.png" alt="Mukhyamantri Vraksharopan Maha Abhiyan" class="middle-image" />
+    <img src="assests/WhatsApp_Image_2024-06-18_at_7.25.37_PM-removebg-preview.png" alt="Geo Tree Logo" />
+  </div>
+
+  <div class="main-content">
+    <div class="left-panel">
+      <div class="map-container">
+        <div class="img">
+          <img src="assests/Rajasthan Map Chart.svg" alt="Rajasthan Map" />
+        </div>
+        <p>Total Trees in Rajasthan District Wise d</p>
+        <p>As on 17 Jul 2024</p>
+      </div>
+      <div class="status-table">
+        <table>
+          <thead>
+            <tr>
+              <th>District</th>
+              <th>Total Trees</th>
+              <th>Trees Planted Today</th>
+              <th>% of Total Tree</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ajmer</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Alwar</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Anupgarh</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Balotra</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Banswara</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Baran</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Barmer</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Beawar</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Bharatpur</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Bhilwara</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Bikaner</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Bundi</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Chittorgarh</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Churu</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Dausa</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Deeg</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Didwana Kuchaman</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Dholpur</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Dudu</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Dungarpur</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Gangapur</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Hanumangarh</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Jaipur</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Jaipur Rural</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Jaisalmer</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Jalore</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Jhalawar</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Jhunjhunu</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Jodhpur</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Jodhpur Rural</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Kekri</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Khairthal–Tijara</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Karauli</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Kotputli-Behror</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Kota</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Nagaur</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Neem Ka Thana</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Pali</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Phalodi</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Pratapgarh</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Rajsamand</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Sanchore</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Salumbar</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Sawai Madhopur</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Sikar</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Sirohi</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Sri Ganganagar</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Tonk</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Udaipur</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+
+
+
+
+
+            <!-- Add other rows similarly -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="right-panel">
+      <div class="status-tree-plantation">
+        <h2 style="padding-left: 10px"> <span style="color: #08519C;"> Rajasthan | </span> <span
+            style="color: #FF9800;">Status Tree Plantation: </span> </h2>
+        <div class="status-details">
+          <div class="status-item1">
+            <p style="color: #795548">Total Number of Trees as on date 16 June 2024</p>
+            <h3 style="color: #795548">9,31,20,422</h3>
+          </div>
+          <div class="status-item2">
+            <p style="color: #007BFF">Total Number of Plant Sites as on date 16 June 2024</p>
+            <h3 style="color: #007BFF">7,87,484 <span>(77.04%)</span></h3>
+          </div>
+          <div class="status-item3">
+            <p style="  color: #008000">Number of Plants Species as on date 16 June 2024</p>
+            <h3 style="  color: #008000">1,20,422 <span>(16.76%)</span></h3>
+          </div>
+        </div>
+        <div class="additional-details">
+          <div style="color: #3F51B5">
+            <p>Total Number of Hectares as on <br>15 Aug 2019</p>
+            <h3>07,57,583</h3>
+          </div>
+          <div style="color: #3F51B5">
+            <p>Total Number of <br> District Covered</p>
+            <h3>4,24,646</h3>
+          </div>
+        </div>
+        <hr>
+        <div class="remaining-trees">
+          <p>Remaining Trees as <br>
+            on date 16 June 2024</p>
+          <h3>7,00,00,000</h3>
+        </div>
+      </div>
+      <div class="growth-chart">
+        <h3>Growth Chart:</h3>
+        <canvas id="growthChart"></canvas>
+      </div>
+      <div class="department-distribution">
+        <h3>Department-Wise Tree Plantation Distribution</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Department Name</th>
+              <th>Number of Trees Planted</th>
+              <th>Percentage of Total Target</th>
+            </tr>
+          </thead>
+          <tbody id="departmentTableBody">
+            <!-- Rows will be dynamically added here -->
+          </tbody>
+        </table>
+      </div>
+      <div class="map">
+        <h3>Map</h3>
+        <div id="map"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="footer">
+    <div class="survey-tasks">
+      <button id="uploadKmlButton">Upload KML</button>
+      <button class="add-user" id="addUserButton">Add User</button>
+      <button class="download-report" id="downloadReportButton">Download Report</button>
+    </div>
+  </div> -->
+
+
+  <!-- Modal for KML upload -->
+  <div id="kmlModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Upload KML File</h2>
+      <input type="file" id="kmlFileInput" accept=".kml,.kmz">
+      <button id="uploadKmlFile">Upload</button>
+    </div>
+  </div>
+
+  <div class="survey">
+    <div class="survey-tasks">
+      <button id="uploadKmlButton">Upload KML</button>
+      <button class="add-user" id="addUserButton">Add User</button>
+      <button class="download-report" id="downloadReportButton">Download Report</button>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="bottom-left">
+      <p> © 2023 Geo Planet Solution. All rights reserved</p>
+    </div>
+    <div class="bottom-right">
+      <a href="#">Terms of Service</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Cookies</a>
+    </div>
+  </div>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- Leaflet KML Plugin -->
+  <script src="https://unpkg.com/leaflet-omnivore/leaflet-omnivore.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+
+</html>
