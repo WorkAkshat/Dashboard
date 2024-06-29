@@ -1,0 +1,746 @@
+.drawer {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #004859;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    color: white;
+    transition: opacity 2s; /*check it*/
+}
+
+.drawer h2,
+.drawer p {
+    padding: 8px 32px;
+    text-align: center;
+}
+
+.drawer .close-btn {
+    position: absolute;
+    top: 1px;
+    right: 5px;
+    font-size: 36px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.drawer-image {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    margin: auto;
+    
+    margin-top: -50px;
+    display: block;
+}
+
+.main-content {
+    padding: 16px;
+    align-items: flex-start;
+    position: relative; /* Align items to the start */
+}
+
+.open-btn {
+    font-size: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #004859;
+    padding: 10px 20px;
+    text-align: center;
+    transition: 0.3s;
+    position: fixed;
+    z-index: 2; /* Ensure the button is above the drawer */
+    top: 1px; /* Adjust the vertical position */
+    left: 2px; /* Adjust the horizontal position */
+}
+
+.open-btn:hover {
+    color: #444;
+}
+
+.drawer-opened .open-btn {
+    display: none; /* Hide the menu icon when drawer is opened */
+}
+
+.drawer .profile {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.profile-pic {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+
+}
+
+.profile-info {
+    color: white;
+}
+
+.profile-info p {
+    margin: 1px 0;
+    text-align: left;
+    display: inline;
+    margin-left: -20px;
+}
+
+.profile-info .name {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.profile-info .email,
+.profile-info .role {
+    font-size: 10px;
+    margin-top: -30px;
+}
+
+.options {
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    font-size: 18px;
+    color: white;
+}
+
+.option i {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.option i {
+    margin-right: 15px; /* Adjust as needed */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+}
+
+.not-btn {
+    font-size: 30px;
+    padding-right: 10px;
+    color: #004859;
+    margin-top: 15px;
+    position: relative;;
+
+}
+
+.profile-pic-nav {
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+    margin-top: 17px;
+    background-color: transparent;
+    position: relative;
+}
+
+.nav-right { /* Assuming you've kept the renamed class */
+    display: flex;
+    align-items: center; /* Align icons vertically */
+}
+
+.nav-right i,
+.nav-right img {
+    margin-left: 10px; /* Add some spacing between elements */
+}
+
+.prof-name {
+    color: #004859;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 2px;
+    font-weight: 550;
+    align-items: center;
+    display: flex;
+    margin-left: 10px;
+
+}
+
+.down {
+    color: #004859;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.dropdown .prof-name {
+    color: #004859;
+    font-size: 16px;
+    padding: 3px;
+    margin-bottom: 2px;
+    font-weight: 550;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+
+}
+
+.dropdown-content p {
+    color: #004859;
+    padding: 0px 5px;
+    margin: 0;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.dropdown-content p:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    left: -10px;
+
+    margin-top: 10px;
+}
+
+.dropdown:hover .prof-name {
+    background-color: #f1f1f1;
+}
+
+.p-off {
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+/* Table Styles */
+
+.tree-details {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+#treeTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#treeTable th,
+#treeTable td {
+    padding: 10px;
+    text-align: left;
+}
+
+#treeTable th {
+    background-color: #004859;
+    color: white;
+}
+
+#treeTable tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#treeTable tbody tr:hover {
+    background-color: #ddd;
+}
+.header-image{
+    height: 50px;
+    width: 100%;
+    margin-top: -20px;
+    position: absolute;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef2f5;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 10px 20px;
+}
+
+.menu-button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white; /* Add this line to change the color */
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.user-name {
+    margin-right: 10px;
+}
+
+.user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px; /* Add margin to separate user icon and user name */
+}
+
+.user-name {
+    margin-right: 10px; /* Add margin to separate user name and dropdown */
+}
+
+.dropbtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #004859; /* Set text color */
+    font-size: 20px; /* Increase the font size to increase the button size */
+    padding: 10px; /* Increase padding to increase button size */
+    position: relative; /* Ensure proper positioning for the icon */
+}
+
+.dropbtn i{
+    color: black;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.stat-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.stat-value {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.stat-change {
+    font-size: 14px;
+}
+
+.stat-change.up {
+    color: green;
+}
+
+.stat-change.down {
+    color: red;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.carbon-footprint, .species-distribution {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+    margin: 10px;
+    min-width: 300px;
+}
+
+.species-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.progress {
+    height: 10px;
+    background-color: #4caf50;
+}
+
+.tasks-map {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.tasks, .map {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+    margin: 10px;
+    min-width: 300px;
+}
+
+.task-button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.task-button:hover {
+    background-color: #0056b3;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.file-input {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.upload-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.upload-button:hover {
+    background-color: #0056b3;
+}
+
+#map {
+    height: 300px;
+    background-color: #e0e0e0;
+}
+
+.download-report {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    position: relative;
+    border: 1px solid #004859;
+}
+
+.download-report h3 {
+    color: #004859;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.download-report input[type="text"] {
+    width: calc(100% - 40px);
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #004859;
+    border-radius: 4px;
+}
+
+.download-report table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.download-report th {
+    border: 1px solid #004859;
+    padding: 8px;
+    text-align: left;
+    color: #004859;
+}
+
+.download-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #004859;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.download-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.download-button:hover {
+    background-color: #003740;
+}
+
+.status-message {
+    display: none;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.status-message.success {
+    display: block;
+    color: green;
+    border: 1px solid green;
+    background-color: #e6ffe6;
+}
+
+
+
+.requests {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    min-width: 300px;
+}
+
+.accordion .accordion-item {
+    margin-bottom: 10px;
+}
+
+.accordion-button {
+    width: 100%;
+    text-align: left;
+    background-color: #f1f1f1;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.accordion-content {
+    padding: 10px;
+    display: none;
+    border-top: 1px solid #ddd;
+}
+
+.accordion-content p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+
+.chart-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    min-width: 300px;
+    text-align: center;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .tasks {
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+    }
+    .header-left, .header-right {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .stats, .main-content, .tasks-map {
+        flex-direction: column;
+    }
+    .stat-item, .carbon-footprint, .species-distribution, .tasks, .map, .download-report {
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+    }
+    .header-left, .header-right {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Media query for screens less than 768px wide */
+@media (max-width: 768px) {
+    .navbar .nav-right {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .open-btn {
+        display: block;
+    }
+
+    .drawer {
+        width: 100%;
+        max-width: 250px;
+        position: absolute;
+        top: 0;
+        left: -250px;
+        transition: left 0.3s ease;
+    }
+
+    .drawer-open .drawer {
+        left: 0;
+    }
+}
+
+.linkk{
+    color: white;
+    text-decoration: none;
+
+}
+
+.linkk2{
+    color: black;
+    text-decoration: none;
+}
